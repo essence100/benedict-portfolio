@@ -1158,3 +1158,40 @@ section {
   transform: translateX(10px);
 
 }
+
+
+/* FOOTER */
+
+.footer {
+
+  padding: 40px 8%;
+
+  background: #020617;
+
+  border-top: 1px solid rgba(56,189,248,0.2);
+
+  text-align: center;
+
+}
+
+
+
+.footer-content h3 {
+
+  color: #38bdf8;
+
+  font-size: 30px;
+
+  margin-bottom: 10px;
+
+}
+
+
+
+.footer-content p {
+
+  color: #cbd5e1;
+
+  margin: 10px 0;
+
+}
