@@ -1,48 +1,58 @@
 function Projects() {
 
+
   const projects = [
-    {
-      title: "Business Website",
-      description:
-        "A modern responsive website designed to help businesses build an online presence.",
-      tech:
-        "HTML | CSS | JavaScript"
-    },
-
 
     {
-      title: "WhatsApp Order System",
+      title: "Personal Portfolio Website",
       description:
-        "A simple ordering system where customers submit orders directly through WhatsApp.",
+        "A modern responsive portfolio website built to showcase my IT skills, services and professional profile.",
       tech:
-        "HTML | CSS | JavaScript"
+        "React | CSS | Responsive Design"
     },
 
 
     {
       title: "Employee Attendance System",
       description:
-        "A future full-stack employee management and attendance solution.",
+        "A full-stack employee attendance and management system designed for web and future mobile application support.",
       tech:
-        "React | Node.js"
+        "React | Backend API | Database"
+    },
+
+
+    {
+      title: "IT Support Solutions",
+      description:
+        "Technical solutions including system setup, troubleshooting, hardware maintenance and network support.",
+      tech:
+        "Hardware | Networking | IT Support"
     }
+
   ];
 
 
+
   return (
+
     <section className="projects" id="projects">
 
 
       <div className="section-title">
-        <h2>My Projects</h2>
+
+        <h2>
+          Featured Projects
+        </h2>
+
       </div>
 
 
 
-      <div className="project-container">
+      <div className="projects-container">
 
 
         {projects.map((project, index) => (
+
 
           <div className="project-card" key={index}>
 
@@ -62,7 +72,14 @@ function Projects() {
             </span>
 
 
+
+            <button>
+              View Project
+            </button>
+
+
           </div>
+
 
         ))}
 
@@ -71,7 +88,9 @@ function Projects() {
 
 
     </section>
+
   );
+
 }
 
 
