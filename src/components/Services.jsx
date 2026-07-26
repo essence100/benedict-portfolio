@@ -2,32 +2,30 @@ function Services() {
 
   const services = [
     {
+      icon: "💻",
       title: "Software Installation",
       description:
         "Windows installation, software setup, drivers installation, updates and system configuration."
     },
 
     {
+      icon: "🔧",
       title: "Hardware Maintenance",
       description:
-        "Computer repair, cleaning, upgrades, replacement and hardware diagnostics."
+        "Computer repair, cleaning, RAM upgrades, storage replacement and hardware diagnostics."
     },
 
     {
+      icon: "🛠️",
       title: "IT Support",
       description:
         "Technical support, troubleshooting, networking and computer maintenance solutions."
-    },
-
-    {
-      title: "Web Development",
-      description:
-        "Responsive websites and modern web solutions using current technologies."
     }
   ];
 
 
   return (
+
     <section className="services" id="services">
 
       <div className="section-title">
@@ -41,6 +39,11 @@ function Services() {
 
           <div className="service-card" key={index}>
 
+            <div className="service-icon">
+              {service.icon}
+            </div>
+
+
             <h3>
               {service.title}
             </h3>
@@ -50,6 +53,7 @@ function Services() {
               {service.description}
             </p>
 
+
           </div>
 
         ))}
@@ -58,7 +62,9 @@ function Services() {
 
 
     </section>
+
   );
+
 }
 
 
