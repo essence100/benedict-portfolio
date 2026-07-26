@@ -1,4 +1,10 @@
+import { useState } from "react";
+
+
 function Navbar() {
+
+  const [open, setOpen] = useState(false);
+
 
   return (
     <nav className="navbar">
@@ -8,33 +14,30 @@ function Navbar() {
       </div>
 
 
-      <ul className="nav-links">
+      <div 
+        className={`nav-links ${open ? "active" : ""}`}
+      >
 
-        <li>
-          <a href="#home">Home</a>
-        </li>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
 
-        <li>
-          <a href="#about">About</a>
-        </li>
+      </div>
 
-        <li>
-          <a href="#services">Services</a>
-        </li>
 
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
+      <div 
+        className="menu-toggle"
+        onClick={() => setOpen(!open)}
+      >
 
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
+        <span></span>
+        <span></span>
+        <span></span>
 
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-
-      </ul>
+      </div>
 
 
     </nav>
