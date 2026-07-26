@@ -13,19 +13,12 @@ function App() {
   return (
     <>
       <Navbar />
-
       <Hero />
-
       <About />
-
       <Services />
-
       <Skills />
-
       <Projects />
-
       <Contact />
-
       <Footer />
     </>
   );
