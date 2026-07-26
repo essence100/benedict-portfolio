@@ -1,6 +1,7 @@
 function About() {
 
   return (
+
     <section className="about" id="about">
 
       <div className="section-title">
@@ -12,28 +13,32 @@ function About() {
 
         <p>
           I am Benedict E. Charles, an IT Specialist passionate about
-          technology, digital solutions and solving technical challenges.
+          providing reliable technology solutions. I specialize in
+          software installation, hardware maintenance, IT support and
+          modern web development.
         </p>
 
 
         <p>
-          My expertise includes software installation, hardware maintenance,
-          IT support, web development and basic database management.
-          I focus on creating reliable solutions and helping individuals
-          and businesses use technology effectively.
+          My goal is to help individuals and businesses solve their
+          technology challenges through efficient troubleshooting,
+          system configuration and user-focused solutions.
         </p>
 
 
         <p>
-          I continuously improve my skills by learning modern technologies
-          and building practical projects that solve real-world problems.
+          I continuously improve my skills in networking, databases,
+          cybersecurity basics and emerging technologies to deliver
+          better IT services.
         </p>
 
       </div>
 
 
     </section>
+
   );
+
 }
 
 
