@@ -11,39 +11,34 @@ function Hero() {
 
 
         <h2>
-          IT Specialist | Web Developer
+          IT Specialist
         </h2>
 
 
         <p>
-          I provide reliable IT solutions including software installation,
-          hardware maintenance, web development and technical support.
-          I build modern digital solutions that help individuals and businesses.
+          Software Installation | Hardware Maintenance | IT Support
         </p>
 
 
-        <div className="hero-buttons">
+        <p className="hero-description">
+          I provide reliable IT solutions including computer maintenance,
+          system setup, troubleshooting, web development and technical support.
+        </p>
 
-          <a href="#contact" className="btn">
-            Hire Me
-          </a>
 
-
-          <a href="#projects" className="btn secondary">
-            View Projects
-          </a>
-
-        </div>
-
+        <a href="#contact" className="btn">
+          Hire Me
+        </a>
 
       </div>
+
 
 
       <div className="hero-image">
 
         <img 
           src="/profile.png" 
-          alt="Benedict E. Charles"
+          alt="Benedict Profile"
         />
 
       </div>
@@ -51,6 +46,7 @@ function Hero() {
 
     </section>
   );
+
 }
 
 
