@@ -1,72 +1,97 @@
 function Skills() {
 
+
   const skills = [
-    {
-      name: "HTML & CSS",
-      level: "90%",
-      description:
-        "Building modern, responsive and attractive website interfaces."
-    },
 
     {
-      name: "JavaScript",
-      level: "75%",
+      title: "Windows & Operating Systems",
       description:
-        "Creating interactive web features and dynamic user experiences."
+        "Installation, formatting, drivers setup, configuration and troubleshooting.",
+      expertise: "90%",
+      experience: "50+ Systems",
+      level: "Advanced"
     },
 
-    {
-      name: "React",
-      level: "70%",
-      description:
-        "Developing modern component-based web applications."
-    },
 
     {
-      name: "Database Management",
-      level: "60%",
+      title: "Hardware Maintenance",
       description:
-        "Basic database design, queries and data management concepts."
+        "Repair, cleaning, upgrades, replacement and hardware diagnostics.",
+      expertise: "95%",
+      experience: "40+ Repairs",
+      level: "Advanced"
     },
 
-    {
-      name: "Networking",
-      level: "75%",
-      description:
-        "LAN setup, WiFi configuration and network troubleshooting."
-    },
 
     {
-      name: "IT Security Basics",
-      level: "65%",
+      title: "Networking",
       description:
-        "System protection, updates and safe computing practices."
+        "LAN setup, WiFi configuration, connectivity solutions and troubleshooting.",
+      expertise: "75%",
+      experience: "20+ Setups",
+      level: "Intermediate"
+    },
+
+
+    {
+      title: "Web Development",
+      description:
+        "HTML, CSS, JavaScript, React and responsive website development.",
+      expertise: "70%",
+      experience: "5+ Projects",
+      level: "Intermediate"
+    },
+
+
+    {
+      title: "Database Management",
+      description:
+        "Database design basics, MySQL, queries and data management.",
+      expertise: "60%",
+      experience: "10+ Tasks",
+      level: "Beginner"
+    },
+
+
+    {
+      title: "IT Security Basics",
+      description:
+        "System protection, updates, security practices and safe computing.",
+      expertise: "65%",
+      experience: "15+ Tasks",
+      level: "Intermediate"
     }
+
   ];
 
 
+
   return (
+
     <section className="skills" id="skills">
 
+
       <div className="section-title">
-        <h2>My Skills</h2>
+
+        <h2>
+          My Skills
+        </h2>
+
       </div>
 
 
+
       <div className="skills-container">
+
 
         {skills.map((skill, index) => (
 
           <div className="skill-card" key={index}>
 
+
             <h3>
-              {skill.name}
+              {skill.title}
             </h3>
-
-
-            <span>
-              {skill.level} Expertise
-            </span>
 
 
             <p>
@@ -74,15 +99,60 @@ function Skills() {
             </p>
 
 
+
+            <div className="skill-info">
+
+
+              <span>
+                Expertise
+              </span>
+
+              <strong>
+                {skill.expertise}
+              </strong>
+
+
+            </div>
+
+
+
+            <div className="skill-info">
+
+
+              <span>
+                Experience
+              </span>
+
+              <strong>
+                {skill.experience}
+              </strong>
+
+
+            </div>
+
+
+
+            <div className="level">
+
+              {skill.level}
+
+            </div>
+
+
+
           </div>
 
         ))}
+
 
       </div>
 
 
     </section>
+
   );
+
+
 }
 
 
